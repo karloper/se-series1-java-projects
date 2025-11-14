@@ -18,3 +18,4 @@ Each folder is an independent Java project that serves as a case study for the a
 - The included code originates from open-source projects and is used **only for educational and analytical purposes**.  
 - Original licenses are preserved in the respective folders.  
 - This repository is not part of the Rascal implementation itself but is referenced by it for automated, reproducible analysis.
+- This repository includes code from Joda-Time (https://github.com/JodaOrg/joda-time) licensed under the Apache License 2.0.
