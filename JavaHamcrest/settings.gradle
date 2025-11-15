@@ -1,0 +1,14 @@
+plugins {
+    // Apply the foojay-resolver plugin to allow automatic download of JDKs
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
+}
+
+include 'hamcrest',
+        'hamcrest-core',
+        'hamcrest-library'
+
+rootProject.name = 'JavaHamcrest'
+
+// Change the file name of the child project build file to match the directory name
+// This avoids having multiple `build.gradle` files, making them easier to distinguish
+rootProject.children.each { childProject -> childProject.buildFileName = "${childProject.name}.gradle" }
